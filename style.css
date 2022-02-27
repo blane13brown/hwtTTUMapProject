@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Encode+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+/* Always set the map height explicitly to define the size of the div
+       * element that contains the map. */
+#map {
+  height: 100%;
+  width: 100%;
+  border: 8px solid rgb(255, 255, 255);
+  border-radius: 5px;
+  z-index: 1;
+}
+
+/* Optional: Makes the sample page fill the window. */
+html,
+body {
+  height: 100%;
+  margin: 0rem 2rem;
+  padding: 0;
+  font-family: 'Encode Sans', sans-serif;
+  font-weight: 500;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 7.5rem 70.5vh 15vh;
+}
+
+html { 
+    background: url("background.jpg") no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+
+::selection{
+    color: #fff;
+    background: #ff4a4a;
+  }
+.wrapper{
+    width: 500px;
+    margin: 2rem 0rem;
+    z-index: 3;
+    position: relative;
+  }
+.wrapper .search-input{
+    background: #fff;
+    width: 100%;
+    border-radius: 5px;
+  }
+.search-input input{
+    height: 55px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    padding: 0 60px 0 20px;
+    font-size: 20px;
+    font-weight: 500;
+    width: 84%;
+    box-shadow: 0px 1px 5px rgba(0,0,0,0.2);
+  }
+.search-input.active input{
+    border-radius: 5px 5px 0 0;
+  }
+.search-input .autocom-box{
+    padding: 0;
+    opacity: 0;
+    pointer-events: none;
+    max-height: 280px;
+    overflow-y: auto;
+    width: 100%;
+  }
+.search-input.active .autocom-box{
+    padding: 10px 8px;
+    opacity: 1;
+    pointer-events: auto;
+  }
+.autocom-box li{
+    list-style: none;
+    padding: 8px 12px;
+    display: none;
+    width: 458px;
+    cursor: default;
+    border-radius: 3px;
+  }
+.search-input.active .autocom-box li{
+    display: block;
+  }
+.autocom-box li:hover{
+    background: #efefef;
+  }
+
+.header-logo {
+    justify-self: end;
+}
+
+.logo {
+    width: 4rem;
+    margin-right: 0rem;
+    margin-top: 1.2rem;
+}
+
+.legend {
+  height: 80%;
+  width: 100%;
+  grid-column-start: 1;
+  grid-column-end: 4;
+  text-align: center;
+}
+
+.legendList {
+  margin-top: 2rem;
+  display: inline-flex;
+  list-style: none;
+  text-decoration: none;
+}
+
+.key1{
+  background: white;
+  border-radius: 5px;
+  padding: .5rem .5rem;
+  text-align: center;
+  margin: 0rem 2rem;
+  width: 8rem;
+  display: table
+}
+
+.key1label{
+  vertical-align: middle;
+  display: table-cell;
+  padding-right: 10px;
+}
+
+.key2{
+  background: white;
+  border-radius: 5px;
+  padding: .5rem .5rem;
+  text-align: center;
+  margin: 0rem 2rem;
+  width: 8rem;
+  display: table
+}
+
+.key2label{
+  vertical-align: middle;
+  display: table-cell;
+  padding-right: 10px;
+}
+
+.key3{
+  background: white;
+  border-radius: 5px;
+  padding: .5rem .5rem;
+  text-align: center;
+  margin: 0rem 2rem;
+  width: 8rem;
+  display: table
+}
+
+.key3label{
+  vertical-align: middle;
+  display: table-cell;
+  padding-right: 10px;
+}
+
+.key4{
+  background: white;
+  border-radius: 5px;
+  padding: .5rem .5rem;
+  text-align: center;
+  margin: 0rem 2rem;
+  width: 8rem;
+  display: table
+}
+
+.key4label{
+  vertical-align: middle;
+  display: table-cell;
+  padding-right: 10px;
+}
+
+.mapcon {
+  grid-column-start: 1;
+  grid-column-end: 4;
+  margin-right: 16px;
+  margin-bottom: 16px;
+}

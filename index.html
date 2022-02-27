@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Simple Map</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="wrapper">
+          <div class="search-input">
+            <a href="" target="_blank" hidden></a>
+            <input type="text" placeholder="Type to search..">
+            <div class="autocom-box">
+            </div>
+          </div>
+      </div>
+      <div></div>
+      <div class="header-logo">
+        <img class="logo" src="TTU.png" alt="Logo">
+      </div>
+      <div class="mapcon">
+        <div id="map"></div>
+      </div>
+      <div class = "legend">
+        <ul class = "legendList">
+          <li class = "key1"><label for="key1" class = key1label>Education Center</label>
+            <img src="Icons/ClassIcon.png" alt="key1">
+          </li>
+          <li class = "key2"><label for="key2" class = key2label>Cafeteria</label>
+            <img src="Icons/DiningIcon.png" alt="key2">
+          </li>
+          <li class = "key3"><label for="key3" class = key3label>Dormatory</label>
+            <img src="Icons/DormIcon.png" alt="key3">
+          </li>
+          <li class = "key4"><label for="key4" class = key4label>Point of Interest</label>
+            <img src="Icons/POIIcon.png" alt="key4">
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Async script executes immediately and must be after any DOM elements used in callback. -->
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCB5NjK_6VYbjzmIMhOVtAQEwD_Dhu7z0Y&libraries=places&map_ids=df79e91244d53147&callback=initMap&v=weekly"
+      async>
+    </script>
+    <script src="script.js"></script>
+    <script src="suggestions.js"></script>
+  </body>
+</html>
